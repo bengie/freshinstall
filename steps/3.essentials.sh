@@ -147,7 +147,7 @@ if [ -n "$(which git)" ]; then
 		echo -e "\033[33mNeeds upgrade\033[0m"
 		GIT_NEEDS_TO_BE_INSTALLED="yes"
 	else
-		echo -e "\033[32mInstalled\033[0m"	
+		echo -e "\033[32mInstalled\033[0m"
 	fi;
 else
 	echo -e "\033[31mNot Installed\033[0m"
@@ -202,6 +202,18 @@ git config --global core.trustctime false
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 git config --global alias.hide "update-index --assume-unchanged"
 git config --global alias.unhide "update-index --no-assume-unchanged"
+
+
+###############################################################################
+# RUBYGEMS                                                                    #
+###############################################################################
+
+sudo gem update --system
+
+sudo gem install bundler
+sudo gem install sass
+sudo gem install scss_lint -v 0.52 # this version matches our css linting rules
+sudo gem install jekyll
 
 echo -e "\033[32mOK\033[0m"
 

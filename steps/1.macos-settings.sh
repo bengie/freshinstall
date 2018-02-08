@@ -476,8 +476,8 @@ echo -e "- Dock, Dashboard, and hot corners …"
 # Enable highlight hover effect for the grid view of a stack (Dock)
 # defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
-# Don't authide dock
-defaults write com.apple.dock autohide -bool false
+# Auto hide dock
+defaults write com.apple.dock autohide -bool true
 
 # Set the icon size of Dock items to 44 pixels
 defaults write com.apple.dock tilesize -int 44

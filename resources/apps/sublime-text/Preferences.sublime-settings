@@ -1,13 +1,35 @@
 {
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
+	"color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
 	"default_line_ending": "LF",
-	"font_size": 14,
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".hg",
+		"CVS"
+	],
+	"font-size": 14,
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"CodeFormatter",
+		"has-Prefix",
+		"SHS-Bourbon",
+		"SHS-Bourbon-Neat",
+		"SHS-Compass-Mixins",
+		"SHS-Compass-Variables",
 		"Vintage"
 	],
+	"rulers":
+	[
+		80
+	],
 	"tab_size": 4,
-	"theme": "Default.sublime-theme",
+	"theme": "Cobalt2.sublime-theme",
 	"translate_tabs_to_spaces": false,
-	"trim_trailing_white_space_on_save": false
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
 }

@@ -35,6 +35,10 @@ complete -F _makefile_targets make
 # ls
 alias la="ls -alG"
 
+# Web dev
+alias sites="cd Projects"
+alias st="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
 # IP addres aliases
 alias publicip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0" #wireless
